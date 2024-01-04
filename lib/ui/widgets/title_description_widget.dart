@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class TitleDescriptionWidget extends StatelessWidget {
   String title;
 
-  TitleDescriptionWidget({
+  TitleDescriptionWidget({super.key, 
     required this.title,
   });
 

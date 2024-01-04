@@ -1,10 +1,6 @@
-import 'dart:convert';
-
 import 'package:movie_app/services/api_services.dart';
 import 'package:movie_app/ui/widgets/item_movie_list_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:http/http.dart' as http;
 
 import '../models/movie_models.dart';
 
@@ -22,7 +18,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getData();
   }

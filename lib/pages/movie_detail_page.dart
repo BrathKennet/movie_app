@@ -6,9 +6,10 @@ import 'package:movie_app/ui/widgets/title_description_widget.dart';
 
 import '../services/api_services.dart';
 
+// ignore: must_be_immutable
 class MovieDetailPage extends StatefulWidget {
   int movieId;
-  MovieDetailPage({required this.movieId});
+  MovieDetailPage({super.key, required this.movieId});
 
 
   @override
@@ -22,7 +23,6 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getData();
   }

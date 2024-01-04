@@ -4,9 +4,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:movie_app/models/movie_models.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class ItemMovieListWidget extends StatelessWidget {
   MovieModel movieModel;
-  ItemMovieListWidget({ required this.movieModel});
+  ItemMovieListWidget({super.key,  required this.movieModel});
 
   @override
   Widget build(BuildContext context) {

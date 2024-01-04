@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ItemCastWidget extends StatelessWidget{
-
+// ignore: must_be_immutable
+class ItemCastWidget extends StatelessWidget {
   String avatarImage;
   String nameActor;
   String nameCharacter;
 
   ItemCastWidget({
+    super.key,
     required this.avatarImage,
     required this.nameActor,
     required this.nameCharacter,
@@ -22,7 +23,7 @@ class ItemCastWidget extends StatelessWidget{
           CircleAvatar(
             radius: 38,
             backgroundImage: NetworkImage(
-              "https://image.tmdb.org/t/p/w500${avatarImage}",
+              "https://image.tmdb.org/t/p/w500$avatarImage",
             ),
           ),
           const SizedBox(height: 5.0),
